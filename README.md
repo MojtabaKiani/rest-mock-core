@@ -29,13 +29,13 @@ Then you can use any http client sending request to it.
 HttpClient httpClient = new HttpClient(5001);
 ```
 
-* If you call the root of server, it will return *"It Works!"* with a OK status code (200).
+* If you call the root of server, it will return *"It Works!"* with an OK status code (200).
 
 * You can use `server.Config` to manage requests, then server will return configured responses to your requests :
 ```csharp
 mockServer.Config.Get("/api/product/").Send("It Really Works!");
 ```
-* If you call a address which you never configured, you will receive *"Page not found!"* with status code (404).
+* If you call an address which you never configured, you will receive *"Page not found!"* with status code (404).
 
 ## More
 There are some options to manage requests better:
